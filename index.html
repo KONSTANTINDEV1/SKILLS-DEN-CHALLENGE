@@ -15,47 +15,52 @@
           <a href="#"><li>About</li></a>
           <a href="#"><li>Partner</li></a>
           <button>Login</button>
-          <button>Register</button>
+          <button class="button">Register</button>
         </ul>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </header>
 
     <main>
       <article>
         <section class="search-holiday">
-          <div class="search-holiday-text-container">
-            <h1>Explore and Travel</h1>
-            <h4>Holiday finder</h4>
-            <div class="options-selector-container">
-              <div class="options-selector-item">
-                <label for="Location">Location</label>
-                <select name="Location" id="Location"></select>
-              </div>
-              <div class="options-selector-item">
-                <label for="Activity">Activity</label>
-                <select name="Activity" id="Activity"></select>
-              </div>
-              <div class="options-selector-item">
-                <label for="Grade">Grade</label>
-                <select name="Grade" id="Grade"></select>
-              </div>
-              <div class="options-selector-item">
-                <label for="Date">Date</label>
-                <select name="Date" id="Date"></select>
-              </div>
-              <button>Explore</button>
-            </div>
-          </div>
           <div class="search-holiday-container">
-            <div class="search-holiday-img-container">
-              <img src="" alt="" />
+            <div class="search-holiday-text-container">
+              <h1>Explore and Travel</h1>
+              <h4>Holiday finder</h4>
+              <div class="options-selector-container">
+                <div class="options-selector-item">
+                  <label for="Location">Location</label>
+                  <select name="Location" id="Location"></select>
+                </div>
+                <div class="options-selector-item">
+                  <label for="Activity">Activity</label>
+                  <select name="Activity" id="Activity"></select>
+                </div>
+                <div class="options-selector-item">
+                  <label for="Grade">Grade</label>
+                  <select name="Grade" id="Grade"></select>
+                </div>
+                <div class="options-selector-item">
+                  <label for="Date">Date</label>
+                  <select name="Date" id="Date"></select>
+                </div>
+                <button class="button">Explore</button>
+              </div>
+              <div class="search-holiday-img-container">
+                <img src="/imgs/Hero-Img.svg" alt="" />
+              </div>
             </div>
           </div>
         </section>
         <section class="explore-world">
           <div class="explore-world-container">
             <div class="explore-world-img-container">
-              <img src="" alt="" />
+              <img src="/imgs/Explore-World.png" alt="" />
             </div>
             <div class="explore-world-text-container">
               <h1>A new way to explore the world</h1>
@@ -64,19 +69,21 @@
                 looking to plan and execute their perfect trip, but now, they
                 can also let Lonely Planet Experiences lead the way
               </p>
-              <button>Learn more</button>
+              <button class="button">Learn more</button>
             </div>
           </div>
         </section>
-        <section class="carousel1">
+        <section class="carousel">
           <div class="carousel-container">
-            <h1 class="carousel-title">
-              Featured destinations
-            </h1>
-            <button>View all</button>
+            <div class="carousel-header">
+              <h1 class="carousel-title">
+                Featured destinations
+              </h1>
+              <button class="button">View all</button>
+            </div>
             <div class="carousel-item">
-              <div class="carousel-img-container1">
-                <img src="" alt="" />
+              <div class="carousel-img-container">
+                <img src="/imgs/carousel-imgs/raja-ampat.png" alt="" />
               </div>
               <div class="text-cutout-container">
                 <h1>Raja Ampat</h1>
@@ -84,8 +91,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="carousel-img-container1">
-                <img src="" alt="" />
+              <div class="carousel-img-container">
+                <img src="/imgs/carousel-imgs/fanjingshan.png" alt="" />
               </div>
               <div class="text-cutout-container">
                 <h1>Fanjingshan</h1>
@@ -93,8 +100,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="carousel-img-container1">
-                <img src="" alt="" />
+              <div class="carousel-img-container">
+                <img src="/imgs/carousel-imgs/vevey.png" alt="" />
               </div>
               <div class="text-cutout-container">
                 <h1>Vevey</h1>
@@ -102,8 +109,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="carousel-img-container1">
-                <img src="" alt="" />
+              <div class="carousel-img-container">
+                <img src="/imgs/carousel-imgs/skadar.png" alt="" />
               </div>
               <div class="text-cutout-container">
                 <h1>Skadar</h1>
@@ -121,17 +128,22 @@
                 city guides app (iOS and Android) is the ultimate resource
                 before and during a trip.
               </p>
-              <button>Download</button>
+              <button class="button">Download</button>
             </div>
             <div class="guides-img-container">
-              <img src="" alt="" />
+              <img src="/imgs/Thousand-03.png" alt="" />
             </div>
           </div>
         </section>
         <section class="testimonials">
           <div class="testinomanials-container">
+            <div class="testimonials-img-container">
+              <img src="/imgs/testimonials/photo.png" alt="" />
+            </div>
             <div class="testimonials-text-container">
-              <img src="" alt="" />
+              <div class="testimonials-stars-container">
+                <img class="stars" src="/imgs/testimonials/stars.svg" alt="" />
+              </div>
               <p>
                 “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
                 dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit
@@ -142,54 +154,56 @@
             </div>
           </div>
         </section>
-        <section class="carousel2">
+        <section class="carousel">
           <div class="carousel-container">
-            <h1 class="carousel-title">Trending Stories</h1>
-            <button>View all</button>
+            <div class="carousel-header">
+              <h1 class="carousel-title">Trending Stories</h1>
+              <button>View all</button>
+            </div>
             <div class="carousel-item">
-              <div class="carousel-img-container2">
-                <img src="" alt="" />
+              <div class="carousel-img-container">
+                <img src="/imgs/carousel-imgs/healing-holiday.png" alt="" />
               </div>
               <h1>The many benefits of taking a healing holiday</h1>
               <p>
                 ‘Helaing holidays’ are on the rise tohelp maximise your health
                 and happines...
               </p>
+              <button>Read more</button>
             </div>
-            <button>Read more</button>
             <div class="carousel-item">
-              <div class="carousel-img-container2">
-                <img src="" alt="" />
+              <div class="carousel-img-container">
+                <img src="/imgs/carousel-imgs/japanese-food.png" alt="" />
               </div>
               <h1>The best Kyoto restaurant to try Japanese food</h1>
               <p>
                 From tofu to teahouses, here’s our guide to Kyoto’s best
                 restaurants to visit...
               </p>
+              <button>Read more</button>
             </div>
-            <button>Read more</button>
             <div class="carousel-item">
-              <div class="carousel-img-container2">
-                <img src="" alt="" />
+              <div class="carousel-img-container">
+                <img src="/imgs/carousel-imgs/remote-yucatan.png" alt="" />
               </div>
               <h1>Skip Chichen Itza and head to this remote Yucatan</h1>
               <p>
                 It’s remote and challenging to get, but braving the jungle and
                 exploring these ruins without the...
               </p>
+              <button>Read more</button>
             </div>
-            <button>Read more</button>
             <div class="carousel-item">
-              <div class="carousel-img-container2">
-                <img src="" alt="" />
+              <div class="carousel-img-container">
+                <img src="/imgs/carousel-imgs/surf-beginer.png" alt="" />
               </div>
               <h1>Surf’s up at these beginner spots around the world</h1>
               <p>
                 If learning to surf has in on your to- do list for a while, the
                 good news is: it’s never too late...
               </p>
+              <button>Read more</button>
             </div>
-            <button>Read more</button>
           </div>
         </section>
       </article>

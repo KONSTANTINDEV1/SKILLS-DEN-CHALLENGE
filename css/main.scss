@@ -5,10 +5,6 @@ html {
   font-family: none;
   list-style: none;
   text-decoration: none;
-}
-
-body,
-html {
   height: 100vh;
   width: 100vw;
 }
@@ -16,6 +12,171 @@ html {
 :root {
   --smtext-color: #848484;
   --lrgtext-color: black;
+  --btn-color: #fb8f1d;
+}
+
+//--- BUTTONS ---//
+
+.button {
+  background-color: #fb8f1d;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width:100px;
+  height: 40px;
+}
+
+//--- NAVBAR ---//
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        list-style: none;
+        padding: 0 20px;
+        a {
+            padding: 0 20px;
+        }
+    }
+}
+
+//--- SEARCH HOLIDAY SECTION ---//
+
+.search-holiday {
+  .search-holiday-text-container {
+    display: flex;
+    justify-content: center;
+    .search-holiday-img-container {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//--- EXPLORE WORLD SECTION START ---//
+.explore-world {
+  .explore-world-container {
+    display: flex;
+    padding: 40px 0;
+    .explore-world-img-container {
+      width: 100%;
+      padding: 0 20px;
+      img {
+        width: 100%;
+      }
+    }
+    .explore-world-text-container {
+      padding: 0 10px;
+      padding-right: 60px;
+    }
+  }
+}
+
+//--- GUIDES SECTION START ---/
+.guides {
+  .guides-container {
+    display: flex;
+    padding: 40px 0;
+    .guides-text-container {
+      width: 100%;
+      padding: 0 10px;
+      padding-left: 60px;
+    }
+    .guides-img-container {
+      width: 100%;
+      padding: 0 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//--- TESTIMONIALS SECTION START ---//
+.testimonials {
+  margin: 50px 0;
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .testimonials-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+    .testimonials-stars-container {
+      display: flex;
+      justify-content: flex-start;
+      width: 80%;
+      padding-top: 20px;
+    }
+    p {
+      width: 80%;
+    }
+  }
+  .testimonials-img-container {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+
+    img {
+      width: 80%;
+    }
+  }
+}
+
+//--- CAROUSEL START ---//
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  button {
+      color: var(--btn-color);
+      outline: none;
+      border: none;
+      background: none;
+     padding: 0;
+  }
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+  .carousel-item {
+    margin: 50px 0;
+  }
+  .carousel-header {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    button {
+      height: 30px;
+      outline: none;
+      background: none;
+      border: none;
+      color: var(--btn-color);
+    }
+  }
+  .carousel-img-container {
+    img {
+      max-height: 400px;
+      object-fit: cover;
+      width: 100%;
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+    }
+  }
 }
 
 //--- FOOTER START ---//
@@ -33,7 +194,7 @@ html {
     flex-direction: column;
     padding-left: 27%;
     color: var(--smtext-color);
-    
+
     .round-icon-container {
       display: flex;
       padding-bottom: 20px;
