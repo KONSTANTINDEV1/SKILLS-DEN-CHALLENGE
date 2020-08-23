@@ -629,6 +629,15 @@ html {
   padding: 0 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  .socials-container a {
+    padding: 0 15px;
+  }
+  .socials-container img {
+    height: 15px;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .socials-container img {
     height: 15px;
