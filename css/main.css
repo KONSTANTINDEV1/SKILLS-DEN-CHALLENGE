@@ -125,7 +125,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 65%;
+  width: 100%;
+  padding: 0 50px;
 }
 
 .search-holiday .search-holiday-container .search-holiday-text-container .search-holiday-title {
@@ -156,7 +157,6 @@ html {
           justify-content: space-between;
   place-items: center;
   height: 4vh;
-  width: 30vw;
   border: 1px solid;
   border-radius: 5px;
   border-color: var(--border-color);
@@ -284,6 +284,12 @@ html {
   width: 80%;
 }
 
+@media only screen and (max-width: 320px) {
+  .testimonials .testimonials-title-container {
+    width: 90%;
+  }
+}
+
 .testimonials .testimonials-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,9 +322,21 @@ html {
   padding-top: 20px;
 }
 
+@media only screen and (max-width: 320px) {
+  .testimonials .testimonials-text-container .testimonials-stars-container {
+    width: 90%;
+  }
+}
+
 .testimonials .testimonials-text-container p {
   width: 80%;
   padding-top: 5px;
+}
+
+@media only screen and (max-width: 320px) {
+  .testimonials .testimonials-text-container p {
+    width: 90%;
+  }
 }
 
 .testimonials .testimonials-img-container {
@@ -428,6 +446,10 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   place-items: center;
+}
+
+.carousel .carousel-header h1 {
+  width: 100%;
 }
 
 .carousel .carousel-header .fa-chevron-right {
@@ -583,9 +605,11 @@ html {
   place-items: center;
 }
 
-.copyright p {
-  margin: 0;
-  font-size: 12px;
+@media only screen and (max-width: 320px) {
+  .copyright p {
+    margin: 0;
+    font-size: 12px;
+  }
 }
 
 .socials-container {

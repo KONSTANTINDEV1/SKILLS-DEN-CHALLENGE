@@ -54,7 +54,6 @@ html {
   &.active span:nth-child(3) {
     transform-origin: center center;
     transform: rotate(45deg) translate(-14px, -15px);
-    
   }
 }
 
@@ -101,7 +100,8 @@ html {
     .search-holiday-text-container {
       display: flex;
       flex-direction: column;
-      width: 65%;
+      width: 100%;
+      padding: 0 50px;
       .search-holiday-title {
         padding-bottom: 50px;
         h1 {
@@ -121,7 +121,7 @@ html {
         justify-content: space-between;
         place-items: center;
         height: 4vh;
-        width: 30vw;
+        
         border: 1px solid;
         border-radius: 5px;
         border-color: var(--border-color);
@@ -221,6 +221,9 @@ html {
     display: flex;
     justify-content: flex-start;
     width: 80%;
+    @media only screen and (max-width: 320px) {
+      width: 90%;
+    }
   }
   .testimonials-text-container {
     display: flex;
@@ -239,10 +242,18 @@ html {
       justify-content: flex-start;
       width: 80%;
       padding-top: 20px;
+      @media only screen and (max-width: 320px) {
+        width: 90%;
+      }
     }
     p {
       width: 80%;
       padding-top: 5px;
+    }
+    @media only screen and (max-width: 320px) {
+      p {
+        width: 90%;
+      }
     }
   }
   .testimonials-img-container {
@@ -321,6 +332,9 @@ html {
     display: flex;
     justify-content: space-between;
     place-items: center;
+    h1 {
+      width: 100%;
+    }
     .fa-chevron-right {
       padding-left: 10px;
       font-size: 10px;
@@ -428,9 +442,11 @@ html {
   padding: 0;
   width: 100%;
   place-items: center;
-  p {
-    margin: 0;
-    font-size: 12px;
+  @media only screen and(max-width:320px) {
+    p {
+      margin: 0;
+      font-size: 12px;
+    }
   }
 }
 .socials-container {
