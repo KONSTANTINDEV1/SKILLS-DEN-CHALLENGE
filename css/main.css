@@ -322,7 +322,7 @@ html {
   padding-top: 20px;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   .testimonials .testimonials-text-container .testimonials-stars-container {
     width: 90%;
   }
@@ -333,7 +333,7 @@ html {
   padding-top: 5px;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   .testimonials .testimonials-text-container p {
     width: 90%;
   }
