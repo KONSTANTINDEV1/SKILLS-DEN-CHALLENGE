@@ -392,19 +392,34 @@ html {
   border-color: var(--border-color);
 }
 
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  width: 100%;
+}
+
 .carousel .carousel-header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  place-items: center;
-  width: 80%;
 }
 
 .carousel .carousel-header h1 {
   width: 100%;
+  padding: 0 15px;
 }
 
 .carousel .carousel-header .fa-chevron-right {
@@ -420,6 +435,8 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
   place-items: center;
+  width: 50%;
+  padding: 0 15px;
   height: auto;
   outline: none;
   background: none;
@@ -438,18 +455,24 @@ html {
 .carousel .carousel-grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(600px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   place-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-gap: 0;
+  padding: 0 15px;
 }
 
 .carousel .carousel-item {
   margin: 20px 0;
-  width: 65%;
+  max-width: 320px;
+  max-height: 517px;
 }
 
 .carousel .carousel-item p {
@@ -513,48 +536,49 @@ html {
   margin: 5px 0;
 }
 
-@media only screen and (max-width: 4000px) {
-  .carousel .carousel-grid-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  }
-}
-
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 600px) {
   .carousel .carousel-grid-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
-}
-
-@media only screen and (max-width: 1700px) {
-  .carousel .carousel-grid-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  .carousel .carousel-header .carousel-title {
+    padding: 0 55px;
+  }
+  .carousel .carousel-header button {
+    padding-right: 55px;
   }
 }
 
-@media only screen and (max-width: 1440px) {
-  .carousel .carousel-grid-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-}
-
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 420px) {
   .carousel .carousel-grid-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+  .carousel .carousel-header .carousel-title {
+    padding: 0 41px;
+  }
+  .carousel .carousel-header button {
+    padding: 0 17px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .carousel .carousel-grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 0 20px;
+  }
+  .carousel .carousel-header .carousel-title {
+    padding: 0 21px;
+  }
+  .carousel .carousel-header button {
+    padding: 0 20px;
   }
 }
 
