@@ -1,10 +1,13 @@
 body,
-html {
+html,
+* {
   padding: 0;
   margin: 0;
   font-family: none;
   list-style: none;
   text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
@@ -259,6 +262,21 @@ html {
   margin: 50px 0;
 }
 
+@media only screen and (min-width: 700px) {
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: row-reverse;
+        -ms-flex-pack: row-reverse;
+            justify-content: row-reverse;
+  }
+}
+
 .testimonials .testimonials-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,6 +292,15 @@ html {
   width: 100vw;
 }
 
+@media only screen and (min-width: 700px) {
+  .testimonials .testimonials-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .testimonials .testimonials-title-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +309,19 @@ html {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 80%;
+}
+
+@media only screen and (min-width: 700px) {
+  .testimonials .testimonials-title-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    padding: 0 60px;
+  }
+  .testimonials .testimonials-title-container h1 {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -298,9 +338,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   place-items: center;
   width: 100%;
 }
@@ -322,19 +362,32 @@ html {
   padding-top: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-  .testimonials .testimonials-text-container .testimonials-stars-container {
-    width: 90%;
+@media only screen and (min-width: 700px) {
+  .testimonials .testimonials-text-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    padding: 0 60px;
   }
-}
-
-.testimonials .testimonials-text-container p {
-  width: 80%;
-  padding-top: 5px;
+  .testimonials .testimonials-text-container h1,
+  .testimonials .testimonials-text-container h4 {
+    width: 100%;
+  }
+  .testimonials .testimonials-text-container p {
+    width: auto;
+    padding: 20px 0;
+  }
+  .testimonials .testimonials-text-container .testimonials-stars-container {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .testimonials .testimonials-text-container p {
+    width: 90%;
+  }
+  .testimonials .testimonials-text-container .testimonials-stars-container {
     width: 90%;
   }
 }
@@ -349,6 +402,16 @@ html {
 
 .testimonials .testimonials-img-container img {
   width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  .testimonials .testimonials-img-container {
+    width: 50%;
+    margin-right: 50px;
+  }
+  .testimonials .testimonials-img-container img {
+    width: 100%;
+  }
 }
 
 .testimonials .testimonials-nav {
@@ -589,13 +652,13 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  place-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100vw;
   height: 482px;
+  margin-top: 80px;
   background-color: #f9f9fb;
 }
 
@@ -629,23 +692,6 @@ html {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
-@media only screen and (max-width: 450px) {
-  .footer-container .grid-container {
-    -ms-grid-columns: (minmax(150px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-  .footer-container .grid-container p {
-    font-size: 12px;
-    line-height: 1.7;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .footer-container .grid-container p {
-    font-size: 11.5px;
-  }
-}
-
 .footer-container .grid-items-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -657,7 +703,6 @@ html {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 0 50px;
   color: var(--lrgtext-color);
 }
 
@@ -671,11 +716,54 @@ html {
   padding: 5px 0;
 }
 
+@media only screen and (max-width: 2200px) {
+  .footer-container .grid-container {
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .footer-container .grid-container {
+    -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-container .grid-container {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer-container .grid-container {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-container .grid-container {
+    -ms-grid-columns: (minmax(190px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .footer-container .grid-items-links h1 {
     font-size: var(--smtitle);
   }
   .footer-container .grid-items-links a {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .footer-container .grid-container {
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .footer-container .grid-container p {
     font-size: 12px;
     line-height: 1.7;
   }
@@ -688,6 +776,9 @@ html {
   .footer-container .grid-items-links a {
     font-size: 11.5px;
     line-height: 1.2;
+  }
+  .footer-container .grid-container p {
+    font-size: 11.5px;
   }
 }
 
