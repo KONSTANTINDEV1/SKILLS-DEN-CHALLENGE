@@ -320,11 +320,9 @@ html {
     }
     @media only screen and (min-width: 500px) {
       left: 33%;
-    
     }
     @media only screen and (min-width: 950px) {
       position: static;
-    
     }
   }
 }
@@ -339,8 +337,8 @@ html {
 }
 .content-wrapper2 {
   padding: 0 10%;
-  @media screen and (max-width: 600px) {
-    padding: 0 10%;
+  @media screen and (max-width: 800px) {
+    padding: 0 20%;
   }
 }
 .content-wrapper3 {
@@ -561,12 +559,30 @@ html {
   img {
     width: 100%;
   }
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 1000px) {
     max-width: 416.84px;
     max-height: 522.98px;
     min-height: 300px;
     min-width: 300px;
     margin-right: 100px;
+    img {
+      width: 100%;
+      margin-right: 40px;
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    max-width: 416.84px;
+    max-height: 522.98px;
+    min-height: 300px;
+    min-width: 300px;
+    margin-right: 0px;
+    img {
+      width: 100%;
+      margin-right: 40px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    margin-right: 0px;
     img {
       width: 100%;
       margin-right: 40px;
@@ -612,9 +628,26 @@ html {
   top: -16px;
   right: -18px;
 
-  @media only screen and (min-width: 700px) {
+  @media only screen and (max-width: 320px) {
     top: -15px;
-    right: 80px;
+    right: -15px;
+  }
+  @media only screen and (min-width: 700px) {
+    top: -18px;
+    right: -16px;
+  }
+  @media only screen and (min-width: 800px) {
+    top: 16px;
+    right: 50px;
+  }
+  @media only screen and (min-width: 1000px) {
+    top: -14px;
+    right: -16px;
+
+  }
+  @media only screen and (min-width: 2000px) {
+    top: -14px;
+    right: -19px;
   }
 }
 .testimonials-cross-icon {
@@ -622,16 +655,31 @@ html {
   bottom: 216px;
   right: 314px;
   z-index: 10;
-  @media only screen and (min-width: 700px) {
-    bottom: -13px;
-    right: 500px;
-    z-index: 10;
+  @media only screen and (min-width: 800px) {
+    bottom: 20px;
+    right: 338px;
+  }
+  @media only screen and (min-width: 1000px) {
+    bottom: -12px;
+    left: 375px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    bottom: 356px;
+    right: 442px;
+  }
+  @media only screen and (max-width: 450px) {
+    bottom: 195px;
+    right: 364px;
+  }
+  @media only screen and (max-width: 380px) {
+    bottom: 211px;
+    right: 318px;
   }
   @media only screen and (max-width: 320px) {
     bottom: -13px;
     bottom: 212px;
     right: 269px;
-    z-index: 10;
   }
 }
 

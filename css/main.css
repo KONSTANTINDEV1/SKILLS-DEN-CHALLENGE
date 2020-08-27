@@ -365,9 +365,9 @@ html {
   padding: 0 10%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .content-wrapper2 {
-    padding: 0 10%;
+    padding: 0 20%;
   }
 }
 
@@ -625,13 +625,37 @@ html {
   width: 100%;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1000px) {
   .testimonials-img-container {
     max-width: 416.84px;
     max-height: 522.98px;
     min-height: 300px;
     min-width: 300px;
     margin-right: 100px;
+  }
+  .testimonials-img-container img {
+    width: 100%;
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .testimonials-img-container {
+    max-width: 416.84px;
+    max-height: 522.98px;
+    min-height: 300px;
+    min-width: 300px;
+    margin-right: 0px;
+  }
+  .testimonials-img-container img {
+    width: 100%;
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .testimonials-img-container {
+    margin-right: 0px;
   }
   .testimonials-img-container img {
     width: 100%;
@@ -679,10 +703,38 @@ html {
   right: -18px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 320px) {
   .testimonials-circle-icon {
     top: -15px;
-    right: 80px;
+    right: -15px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .testimonials-circle-icon {
+    top: -18px;
+    right: -16px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .testimonials-circle-icon {
+    top: 16px;
+    right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .testimonials-circle-icon {
+    top: -14px;
+    right: -16px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .testimonials-circle-icon {
+    top: -14px;
+    right: -19px;
   }
 }
 
@@ -693,11 +745,38 @@ html {
   z-index: 10;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   .testimonials-cross-icon {
-    bottom: -13px;
-    right: 500px;
-    z-index: 10;
+    bottom: 20px;
+    right: 338px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .testimonials-cross-icon {
+    bottom: -12px;
+    left: 375px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .testimonials-cross-icon {
+    bottom: 356px;
+    right: 442px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .testimonials-cross-icon {
+    bottom: 195px;
+    right: 364px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .testimonials-cross-icon {
+    bottom: 211px;
+    right: 318px;
   }
 }
 
@@ -706,7 +785,6 @@ html {
     bottom: -13px;
     bottom: 212px;
     right: 269px;
-    z-index: 10;
   }
 }
 
